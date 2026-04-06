@@ -1,4 +1,3 @@
-// 1. pluginManagement MUST be first
 pluginManagement {
     repositories {
         google {
@@ -12,13 +11,9 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-
-// 2. plugins block comes SECOND
 plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
-
-// 3. Everything else comes after
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -27,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Water Reminder"
+rootProject.name = "Hydration Monitor"
 include(":app")

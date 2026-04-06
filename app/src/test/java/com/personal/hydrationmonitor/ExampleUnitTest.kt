@@ -1,4 +1,4 @@
-package com.example.waterreminder
+package com.personal.hydrationmonitor
 
 import org.junit.Test
 
